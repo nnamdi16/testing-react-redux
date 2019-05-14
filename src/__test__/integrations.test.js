@@ -22,7 +22,10 @@ it('can fetch a list of comments and display them', done => {
 			<App />
 		</Root>
 	);
-	wrapped.find('.fetch-comments').simulate('click');
+	wrapped
+		.find('.fetch-comments')
+		.at(1)
+		.simulate('click');
 	moxios.wait(() => {
 		wrapped.update();
 		expect(wrapped.find('li').length).toEqual(2);
