@@ -1,11 +1,12 @@
 import React from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
+import 'materialize-css/dist/js/materialize';
 import CommentBox from 'components/CommentBox';
 import CommentList from 'components/CommentList';
 
 function App() {
 	return (
-		<div className="App">
-			Hi there !
+		<div className="container">
 			<CommentBox />
 			<CommentList />
 		</div>
