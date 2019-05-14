@@ -7,13 +7,15 @@
     "axios": "^0.18.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.0",
+    "materialize-css": "^1.0.0-rc.2",
     "moxios": "^0.4.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
-    "redux-promise": "^0.6.0"
+    "redux-promise": "^0.6.0",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +39,9 @@
     ]
   },
   "devDependencies": {
-    "enzyme-to-json": "^3.3.5"
+    "css-loader": "^2.1.1",
+    "enzyme-to-json": "^3.3.5",
+    "style-loader": "^0.23.1"
   },
   "jest": {
     "snapshotSerializers": [
