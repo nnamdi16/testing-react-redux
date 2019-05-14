@@ -4,13 +4,18 @@ import { connect } from 'react-redux';
 class CommentList extends Component {
 	renderComments() {
 		return this.props.comments.map(comment => {
-			return <li key={comment}>{comment}</li>;
+			return (
+				<li className="collection-item" key={comment}>
+					{comment}
+				</li>
+			);
 		});
 	}
 	render() {
 		return (
 			<div>
-				<ul>{this.renderComments()}</ul>
+				<h4>Comments</h4>
+				<ul className="collection with-header">{this.renderComments()}</ul>
 			</div>
 		);
 	}
